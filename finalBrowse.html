@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Elder Pages - Browse</title>
+
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="finalHome.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap" rel="stylesheet">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+        crossorigin="anonymous"></script>
+
+
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-expand-md fixed-top pt-0 pb-0" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand">Elder Pages Book Emporium</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto"> <!-- Add margins example: mb-5, mb-lg-0 -->
+
+                        <!-- CHECK TO SEE IF FW CAN BE LIGHT, SEEMS SIMILAR TO 100, BUT MUST USE LIGHT IN BOOTSTRAP -->
+                        <li class="nav-item">
+                            <a href="finalHome.html" class="nav-link fw-light"><strong>Home</strong></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="finalEvents.html" class="nav-link fw-light"><strong>Special Events</strong></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="finalFeatured.html" class="nav-link fw-light"><strong>Featured Titles and Deals</strong></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="finalBrowse.html" class="nav-link fw-light" aria-current="page"><strong>Browse</strong></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="finalContact.html" class="nav-link fw-light"><strong>Contact</strong></a>
+                        </li>
+
+                    </ul>
+                </div> <!-- NAVBAR LINKS COLLAPSABLE-->
+
+            </div> <!-- CONTAINER FLUID -->
+        </nav>
+
+        <p>BROWSE</p>
+
+
+        <div class="card p-2 m-5" style="background-color: #4A32D4; border-radius: 0;">
+            <div class="p-2 m-2" style="background-color: #228B22;">
+                <div class="p-2 m-2" style="background-color: #4A32D4;">
+                    <div class="m-2 p-5" style="background-color: #F2E5B5;">
+                        <form action="" class="giveBorder pb-3">
+                            <select name="category" id="category">Choose what you want to search for?
+                                <option value="title">Title</option>
+                                <option value="author">Author</option>
+                                <option value="genre">Genre</option>
+                                <option value="maxPrice">Maximum Price</option>
+                            </select>
+
+                            <input type="text"> <!-- class="form-control"-->
+                            <button type="button" onclick="search()">Search</button>
+                            <br>
+                        </form>
+
+                        <br>
+
+                        <div id="content" class="normalText">
+
+                        </div>
+
+                    </div> <!--2nd Blue End-->
+                </div> <!--Green Stripe End-->
+            </div> <!--1st Blue End-->
+        </div> <!--Card End-->
+
+
+        
+
+        <script src="browseBooks.js"></script>
+    </body>
+</html>
